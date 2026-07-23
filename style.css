@@ -1,0 +1,443 @@
+/* ==========================================
+   GABARIT COMMUN PHYSIQUE-CHIMIE CRMEF
+   Feuille de style principale - Version V2
+========================================== */
+
+
+/* ==========================
+   Réinitialisation générale
+========================== */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+/* ==========================
+   Corps de la page
+========================== */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f3f4f6;
+
+    color: #111827;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* ==========================
+   En-tête professionnel
+========================== */
+
+.header {
+
+    background-color: #1e3a8a;
+
+    color: white;
+
+    padding: 25px;
+
+}
+
+
+
+.logo-zone {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+
+.logo-placeholder {
+
+    width: 80px;
+
+    height: 80px;
+
+    background-color: white;
+
+    color: #1e3a8a;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+}
+
+
+
+.header h1 {
+
+    font-size: 28px;
+
+}
+
+
+
+.header p {
+
+    font-size: 16px;
+
+}
+
+
+
+.resource-title {
+
+    margin-top: 25px;
+
+    background-color: #3b82f6;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+}
+
+
+
+.resource-title h2 {
+
+    margin-bottom: 5px;
+
+}
+
+
+
+/* ==========================
+   Carte informations pédagogiques
+========================== */
+
+
+.info-card {
+
+
+    max-width: 1000px;
+
+    margin: 25px auto;
+
+    background-color: white;
+
+    padding: 20px;
+
+
+    display: flex;
+
+    justify-content: space-around;
+
+    gap: 20px;
+
+
+    border-radius: 10px;
+
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+.info-card div {
+
+
+    flex: 1;
+
+    text-align: center;
+
+
+}
+
+
+
+.info-card strong {
+
+
+    color: #1e3a8a;
+
+}
+
+
+
+
+
+/* ==========================
+   Navigation
+========================== */
+
+
+nav {
+
+
+    background-color: white;
+
+    padding: 15px;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+
+.tab-button {
+
+
+    background-color: #3b82f6;
+
+
+    color: white;
+
+
+    border: none;
+
+
+    padding: 12px 20px;
+
+
+    border-radius: 8px;
+
+
+    cursor: pointer;
+
+
+    transition: 0.3s;
+
+
+}
+
+
+
+.tab-button:hover {
+
+
+    background-color: #1e3a8a;
+
+
+}
+
+
+
+/* ==========================
+   Contenu principal
+========================== */
+
+
+main {
+
+
+    max-width: 1000px;
+
+
+    margin: 30px auto;
+
+
+    padding: 20px;
+
+
+}
+
+
+
+.tab-content {
+
+
+    background-color: white;
+
+
+    padding: 30px;
+
+
+    border-radius: 12px;
+
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+
+
+}
+
+
+
+.tab-content h2 {
+
+
+    color: #1e3a8a;
+
+
+    margin-bottom: 15px;
+
+
+}
+
+
+
+/* ==========================
+   Blocs pédagogiques
+========================== */
+
+
+.box {
+
+
+    margin-top: 20px;
+
+
+    padding: 20px;
+
+
+    border-left: 6px solid #3b82f6;
+
+
+    background-color: #f8fafc;
+
+
+    border-radius: 8px;
+
+
+}
+
+
+
+.box h3 {
+
+
+    color: #1e3a8a;
+
+
+    margin-bottom: 10px;
+
+
+}
+
+
+
+.definition {
+
+
+    border-left-color: #10b981;
+
+
+}
+
+
+
+/* ==========================
+   Pied de page
+========================== */
+
+
+footer {
+
+
+    background-color: #111827;
+
+
+    color: white;
+
+
+    text-align: center;
+
+
+    padding: 20px;
+
+
+    margin-top: 30px;
+
+
+}
+
+
+
+/* ==========================
+   Responsive
+========================== */
+
+
+@media screen and (max-width:700px){
+
+
+    .logo-zone {
+
+
+        flex-direction: column;
+
+
+        text-align: center;
+
+
+    }
+
+
+
+    .info-card {
+
+
+        flex-direction: column;
+
+
+    }
+
+
+
+    .tab-button {
+
+
+        width: 90%;
+
+
+    }
+
+
+}
+
+.tab-button.active {
+
+    background-color: #1e3a8a;
+
+    transform: scale(1.05);
+
+}
+
+.author {
+
+    margin-top: 10px;
+
+    font-style: italic;
+
+    font-size: 15px;
+
+}
